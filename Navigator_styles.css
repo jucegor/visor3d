@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f5f7;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+    background-color: lightblue;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    color: rgb(8, 23, 153);
+    text-align: center;
+}
+
+.pricing-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+}
+
+.pricing-box {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 30px 30px;
+    margin: 2%;
+    min-width: 250px;
+    max-width: 350px;
+    height: 650px;
+}
+
+.overboard {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 30px 30px;
+    margin: 2%;
+    min-width: 250px;
+}
+
+.area {
+    margin: 24px 0;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    border: none;
+    background-color: #949dec;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn-second {
+    border-radius: 25px;
+    border: none;
+    background-color: #949dec;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    width: 30%;
+    margin-top: 10%;
+}
+
+.btn-primary:hover {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.btn-second:hover {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.transformacion {
+    background-image: url('https://www.grupohierrosalfonso.com/sites/default/files/styles/detalle/public/images/productos/aceros_inoxidables.jpg?itok=ie7dPOEr');
+    background-size: auto;
+    background-position: left center;
+    color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.transformacion_titulo {
+    margin-bottom: 0px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255), 10px 10px 10px rgb(5, 2, 37);
+}
+
+.linea-1 {
+    background-image: url('https://www.metalockengineering.com/media/1103/specialist-tig-welding.jpg?mode=crop&width=450&height=450');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-2 {
+    background-image: url('https://www.metalockengineering.com/media/1104/specialist-mig-welding.jpg?mode=crop&width=450&height=450');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-3 {
+    background-image: url('https://www.seas.es/blog/wp-content/uploads/2017/07/soldador.jpg');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-4 {
+    background-image: url('https://maraga.vtexassets.com/arquivos/ids/230682-800-450?width=800&height=450&aspect=true');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-5 {
+    background-image: url('https://maraga.vtexassets.com/arquivos/ids/231208-800-450?width=800&height=450&aspect=true');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-1-p2 {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/91b54RhwNAL._AC_SY450_.jpg');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-2-p2 {
+    background-image: url('https://www.metalockengineering.com/media/1091/main-thermal-spraying-700x400.jpg?mode=crop&width=450&height=450');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.linea-3-p2 {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/51HYY9k6maL._AC_SY450_.jpg');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.robot {
+    background-image: url('https://www.robots.com/images/robots/Fanuc/Legacy/FANUC_ARC_Mate_100i_0003.jpg');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.pintura {
+    background-image: url('https://www.typdemexico.com.mx/wp-content/uploads/2017/01/RecubrimientoElec-450x450-thegem-gallery-fullwidth.jpg');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.ensamble {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/71-C0XXv7ZL._AC_SY450_.jpg');
+    background-size: auto;
+    background-position: center center;
+    color: #000000;
+    background-repeat: no-repeat;
+}
+
+.pricing-box-bg-image .features-list li {
+    border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+.pricing-box-bg-image .btn-primary {
+    background-color: #ffffff;
+    color: #000;
+}
+
+
+/*Parts of my own code*/
+
+#header_img {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*++++++++++++++++GRID RESPOSIVE Transformación+++++++++++++++++++++*/
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 0px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0px;
+}
+
+.column img {
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 10000px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.container {
+    display: flex;
+    position: center;
+    transform: translateY(-20%);
+}
