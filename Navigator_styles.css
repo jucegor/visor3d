@@ -100,7 +100,7 @@ body {
 .transformacion_titulo {
     margin-bottom: 0px;
     text-align: center;
-    font-variant: small-caps;
+    font-variant: normal;
     color: #000000;
     font-size: 60px;
     font-weight: 900;
