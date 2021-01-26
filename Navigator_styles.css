@@ -73,6 +73,8 @@ body {
     cursor: pointer;
     padding: 10px 15px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
     text-transform: uppercase;
     transition: all 0.1s ease-in-out;
     width: 30%;
@@ -97,76 +99,64 @@ body {
     background-repeat: no-repeat;
 }
 
-.transformacion_titulo {
+.area_titulo {
     margin-bottom: 0px;
     text-align: center;
-    font-variant: normal;
+    font-variant: small-caps;
+    font-family: monospace;
     color: #000000;
     font-size: 60px;
     font-weight: 900;
-    text-shadow: 2px 2px 2px rgb(255, 255, 255), 10px 10px 10px rgb(5, 2, 37);
 }
 
 .linea-1 {
     background-image: url('https://www.metalockengineering.com/media/1103/specialist-tig-welding.jpg?mode=crop&width=450&height=450');
-    background-size: auto;
-    background-position: center center;
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
 }
 
 .linea-2 {
     background-image: url('https://www.metalockengineering.com/media/1104/specialist-mig-welding.jpg?mode=crop&width=450&height=450');
-    background-size: auto;
-    background-position: center center;
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
 }
 
 .linea-3 {
     background-image: url('https://www.seas.es/blog/wp-content/uploads/2017/07/soldador.jpg');
-    background-size: auto;
-    background-position: center center;
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
 }
 
 .linea-4 {
-    background-image: url('https://maraga.vtexassets.com/arquivos/ids/230682-800-450?width=800&height=450&aspect=true');
-    background-size: auto;
-    background-position: center center;
+    background-image: url('https://www.metalworkingworldmagazine.com/files/2015/04/welding01.jpg');
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
 }
 
 .linea-5 {
-    background-image: url('https://maraga.vtexassets.com/arquivos/ids/231208-800-450?width=800&height=450&aspect=true');
-    background-size: auto;
-    background-position: center center;
+    background-image: url('https://weldinggeek.com/wp-content/uploads/2016/02/The-Most-Common-Types-of-Welding.jpg');
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
 }
 
-.linea-1-p2 {
+.planta2 {
     background-image: url('https://images-na.ssl-images-amazon.com/images/I/91b54RhwNAL._AC_SY450_.jpg');
-    background-size: auto;
-    background-position: center center;
-    color: #000000;
-    background-repeat: no-repeat;
-}
-
-.linea-2-p2 {
-    background-image: url('https://www.metalockengineering.com/media/1091/main-thermal-spraying-700x400.jpg?mode=crop&width=450&height=450');
-    background-size: auto;
-    background-position: center center;
-    color: #000000;
-    background-repeat: no-repeat;
-}
-
-.linea-3-p2 {
-    background-image: url('https://images-na.ssl-images-amazon.com/images/I/51HYY9k6maL._AC_SY450_.jpg');
-    background-size: auto;
-    background-position: center center;
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
 }
@@ -189,8 +179,8 @@ body {
 
 .ensamble {
     background-image: url('https://images-na.ssl-images-amazon.com/images/I/71-C0XXv7ZL._AC_SY450_.jpg');
-    background-size: auto;
-    background-position: center center;
+    background-size: 30%;
+    background-position: right center;
     color: #000000;
     background-repeat: no-repeat;
 }
@@ -217,7 +207,7 @@ body {
 }
 
 img {
-    max-width: 40%;
+    max-width: 200%;
     height: auto;
     display: block;
     margin-left: auto;
