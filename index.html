@@ -1,166 +1,173 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Navigator_styles.css">
-    <title>Visor 3D</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Login Bioin</title>
 </head>
 
 <body>
-    <header>
-        <!--Sugerencia de inserción de un menú de navegación lateral.-->
-        <img id="header_img" src="Imagenes/Logo_bio.png" alt="Logo Bio">
-        <h1 class="mainTitle">Visor 3D</h1>
-        <ul class="nav">
-            <li><a href="#transformacion">Transformación</a></li>
-            <li><a href="">Lineas de producción</a>
-                <ul>
-                    <li><a href="#linea1">Linea 1</a></li>
-                    <li><a href="#linea2">Linea 2</a></li>
-                    <li><a href="#linea3">Linea 3</a></li>
-                    <li><a href="#linea4">Linea 4</a></li>
-                    <li><a href="#linea5">Linea 5</a></li>
-                    <li><a href="#linea6">Linea 6</a></li>
-                </ul>
-            </li>
-            <li><a href="#pl2">Planta 2</a></li>
-            <!-- <li><a href="#">XXXXX</a></li> -->
+    <SCRIPT language=JavaScript>
+        function go() {
 
-        </ul>
-    </header>
+            if (document.form.password.value == 'Bioin2020*' && document.form.login.value == 'Bioin') {
+                document.form.submit();
+            } else {
+                alert("Porfavor ingrese, nombre de usuario y contraseña correctos.");
+            }
+        }
+    </SCRIPT>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            background-color: #2a4e7d;
+        }
+        
+        @media (min-width: 320px) {
+            .containerLogin {
+                background-color: white;
+                margin: 3rem;
+                padding: 5rem 0 5rem 0;
+                text-align: center;
+                border: 1rem solid white;
+                border-radius: 5rem;
+            }
+            img {
+                width: 5rem;
+                height: auto;
+                margin: 4rem
+            }
+            form div {
+                margin: 2rem;
+            }
+            label,
+            input {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1.8rem;
+                letter-spacing: 0.3rem;
+                margin: 1rem;
+            }
+            input {
+                border: 0.1rem solid rgb(192, 191, 191);
+                border-radius: 5rem;
+                text-align: center;
+                padding: 0.2rem;
+            }
+            .button {
+                padding: 2rem;
+                background-color: #2a4e7d;
+                color: white;
+            }
+        }
+        
+        @media (min-width: 600px) {
+            .containerLogin {
+                background-color: white;
+                margin: 3rem;
+                padding: 20rem 0 20rem 0;
+                text-align: right;
+                border: 1rem solid white;
+                border-radius: 5rem;
+            }
+            img {
+                width: 40rem;
+                height: auto;
+                margin: 4rem
+            }
+            form div {
+                margin: 2rem;
+            }
+            label,
+            input {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 2rem;
+                letter-spacing: 0.3rem;
+                margin: 1rem;
+            }
+            input {
+                border: 0.1rem solid rgb(192, 191, 191);
+                border-radius: 5rem;
+                text-align: center;
+                padding: 0.2rem;
+            }
+            .button {
+                padding: 2rem;
+                background-color: #2a4e7d;
+                color: white;
+            }
+        }
+        
+        @media (min-width: 800px) {
+            .containerLogin {
+                background-color: white;
+                margin: 3rem;
+                padding: 10rem 0 10rem 0;
+                text-align: center;
+                border: 1rem solid white;
+                border-radius: 5rem;
+            }
+            img {
+                width: 30rem;
+                height: auto;
+                margin: 4rem
+            }
+            form div {
+                margin: 3rem;
+            }
+            label,
+            input {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 2.0rem;
+                letter-spacing: 0.3rem;
+                margin: 1rem;
+            }
+            input {
+                border: 0.1rem solid rgb(192, 191, 191);
+                border-radius: 5rem;
+                text-align: center;
+                padding: 0.2rem;
+            }
+            .button {
+                padding: 2rem;
+                background-color: #2a4e7d;
+                color: white;
+            }
+            .inputDesktop {
+                text-align: right;
+                width: 70rem;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    </style>
+    <div class="containerLogin">
+        <img src="./Imagenes/Logo_bio.png" alt="LogoBioin">
+        <form name=form action="Navigator.html">
+            <div class="inputDesktop">
+                <div>
+                    <label for="login">Usuario:</label>
+                    <input type=text name=login>
+                </div>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type=password name=password>
+                </div>
+            </div>
+            <div>
+                <input class="button" onclick=go() type=button value=Acceder>
+            </div>
 
-    <div class="areaContainer">
-        <p id="transformacion" class="area_titulo">Transformación</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/3uGad8m" target="_blank"> <img src="Imagenes/GMM17131R PNL PUBX F-END.png" alt="GMM17131R PNL PUBX F/END"><br>GMM17131R PNL PUBX F/END</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/2NGKR9T" target="_blank"> <img src="Imagenes/BIOS4001 - CM02.png" alt=""><br>BIOS4001 -- CM02</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/2NHeGqR" target="_blank"> <img src="Imagenes/TIA20194R TAREK VW.png" alt="TIA20194R TAREK VW"><br>TIA20194R TAREK VW</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3raC2DB" target="_blank"> <img src="Imagenes/TOY19138 INT. 65817-04160  PANEL, BODY SIDE OUTER LH.png" alt="TOY19138 INT. 65817-04160  PANEL, BODY SIDE OUTER LH (long)">TOY19138 INT. 65817-04160 PANEL, BODY SIDE OUTER LH (long)</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/381ZwDw" target="_blank"> <img src="Imagenes/TOY19134R PANEL INT, RR DOOR OUTER RH 67113-04040.png" alt="TOY19134R PANEL INT, RR DOOR OUTER RH 67113-04040">TOY19134R PANEL INT, RR DOOR OUTER RH 67113-04040</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/2NIN04w" target="_blank"> <img src="Imagenes/AUT20115R CANASTILLA ESPECIAL CX430.png" alt="AUT20115R CANASTILLA ESPECIAL CX430">AUT20115R CANASTILLA ESPECIAL CX430</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3b4mTOw" target="_blank"> <img src="Imagenes/RACK SUPERSACOS (2) BIO20184R.png" alt="SSacos2"> <br>BIO20184R RACK SUPERSACOS (2")</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3sDBaHV" target="_blank"> <img src="Imagenes/ABC19498 SPOILER - NIVEL DE ING 1.png" alt="ABC19498 SPOILER - NIVEL DE ING 1">ABC19498 SPOILER - NIVEL DE ING 1</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3l4CUaz" target="_blank"> <img src="Imagenes/KTM20336R CARPET WIP KTM USA-AGS.png" alt="KTM20336R CARPET WIP KTM USA/AGS"><br>KTM20336R CARPET WIP KTM USA/AGS</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/2OKqCYK" target="_blank"> <img src="Imagenes/CHA19525R CHASSIS BRAKES INTERNATIONAL.png" alt="CHA19525R CHASSIS BRAKES INTERNATIONAL"><br>CHA19525R CHASSIS BRAKES INTERNATIONAL</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/38veCkV" target="_blank"> <img src="Imagenes/BIOS4002 - CM03.png" alt=""><br>BIOS4002 - CM03</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3tInOLb" target="_blank"> <img src="Imagenes/FCA20219R HEMI UNIVERSAL ENGINE.png" alt="FCA20219R HEMI UNIVERSAL ENGINE">FCA20219R HEMI UNIVERSAL ENGINE</a>
-            </div>
-        </div>
-
+        </form>
     </div>
-
-
-    <hr>
-
-    <div class="areaContainer">
-        <p id="linea1" class="area_titulo">Linea 1</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/38veCkV" target="_blank"> <img src="Imagenes/BIOS4002 - CM03.png" alt=""><br>BIOS4002 - CM03</a>
-            </div>
-            <!-- <div class="btn-second"><a href="" target="_blank"> <img src="Imagenes/" alt=""></a></div>-->
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="areaContainer">
-        <p id="linea2" class="area_titulo">Linea 2</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/2OKqCYK" target="_blank"> <img src="Imagenes/CHA19525R CHASSIS BRAKES INTERNATIONAL.png" alt="CHA19525R CHASSIS BRAKES INTERNATIONAL"><br>CHA19525R CHASSIS BRAKES INTERNATIONAL</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="areaContainer">
-        <p id="linea3" class="area_titulo">Linea 3</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/2OKqCYK" target="_blank"> <img src="Imagenes/CHA19525R CHASSIS BRAKES INTERNATIONAL.png" alt="CHA19525R CHASSIS BRAKES INTERNATIONAL"><br>CHA19525R CHASSIS BRAKES INTERNATIONAL</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="areaContainer">
-        <p id="linea4" class="area_titulo">Linea 4</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/381ZwDw" target="_blank"> <img src="Imagenes/TOY19134R PANEL INT, RR DOOR OUTER RH 67113-04040.png" alt="TOY19134R PANEL INT, RR DOOR OUTER RH 67113-04040">TOY19134R PANEL INT, RR DOOR OUTER RH 67113-04040</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="areaContainer">
-        <p id="linea5" class="area_titulo">Linea 5</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/3l4CUaz" target="_blank"> <img src="Imagenes/KTM20336R CARPET WIP KTM USA-AGS.png" alt="KTM20336R CARPET WIP KTM USA/AGS"><br>KTM20336R CARPET WIP KTM USA/AGS</a>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="areaContainer">
-        <p id="pl2" class="area_titulo">Planta 2</p>
-        <div class="BoxBoxes">
-            <div class="linkBox">
-                <a href="https://autode.sk/2NHeGqR" target="_blank"> <img src="Imagenes/TIA20194R TAREK VW.png" alt="TIA20194R TAREK VW"><br>TIA20194R TAREK VW</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3uGad8m" target="_blank"> <img src="Imagenes/GMM17131R PNL PUBX F-END.png" alt="GMM17131R PNL PUBX F/END"><br>GMM17131R PNL PUBX F/END</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3raC2DB" target="_blank"> <img src="Imagenes/TOY19138 INT. 65817-04160  PANEL, BODY SIDE OUTER LH.png" alt="TOY19138 INT. 65817-04160  PANEL, BODY SIDE OUTER LH (long)">TOY19138 INT. 65817-04160 PANEL, BODY SIDE OUTER LH (long)</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/2NIN04w" target="_blank"> <img src="Imagenes/AUT20115R CANASTILLA ESPECIAL CX430.png" alt="AUT20115R CANASTILLA ESPECIAL CX430">AUT20115R CANASTILLA ESPECIAL CX430</a>
-            </div>
-            <div class="linkBox">
-                <a href="https://autode.sk/3tInOLb" target="_blank"> <img src="Imagenes/FCA20219R HEMI UNIVERSAL ENGINE.png" alt="FCA20219R HEMI UNIVERSAL ENGINE">FCA20219R HEMI UNIVERSAL ENGINE</a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- <div class="btn-second"><a href="" target="_blank"> <img src="Imagenes/" alt=""></a></div>-->
-
-
-
-
 </body>
 
 </html>
