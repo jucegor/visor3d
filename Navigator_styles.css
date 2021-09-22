@@ -1,4 +1,5 @@
     @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    @import url('/CSS/flipp_cards.css');
     /* 
 *
 *
@@ -29,6 +30,13 @@
     hr {
         margin: 5rem;
         color: #7793ba;
+    }
+    
+    p {
+        color: black;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 1.5rem;
     }
     
     .BoxBoxes {
@@ -121,8 +129,9 @@
             padding: 1rem;
         }
         img {
-            width: 15rem;
+            width: 10rem;
             height: auto;
+            border-radius: 10%;
         }
         .linkBox>a {
             color: #443d4d;
@@ -140,6 +149,13 @@
             font-size: 2rem;
             font-family: sans-serif;
             text-align: center;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        .linkBox img {
+            width: 100px;
+            height: 100px;
         }
     }
     
@@ -219,13 +235,13 @@
         }
         .BoxBoxes {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
             grid-auto-rows: minmax(5rem, auto);
             grid-gap: 2rem;
             padding: 1rem;
         }
         img {
-            width: 15rem;
+            width: 20rem;
             height: auto;
         }
         .linkBox>a {
@@ -244,6 +260,13 @@
             font-size: 2rem;
             font-family: sans-serif;
             text-align: center;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        .linkBox img {
+            width: 100px;
+            height: 100px;
         }
     }
     
@@ -315,13 +338,13 @@
         }
         .BoxBoxes {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
             grid-auto-rows: minmax(5rem, auto);
             grid-gap: 2rem;
             padding: 1rem;
         }
         img {
-            width: 15rem;
+            width: 20rem;
             height: auto;
         }
         .linkBox>a {
@@ -340,5 +363,12 @@
             font-size: 2rem;
             font-family: sans-serif;
             text-align: center;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        .linkBox img {
+            width: 100px;
+            height: 100px;
         }
     }

@@ -3,216 +3,463 @@
 
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Navigator_styles.css">
-        <title>Visor 3D</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navigator_styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Visor 3D</title>
+</head>
 
-    </head>
+<body>
+    <header>
+        <!--Sugerencia de inserción de un menú de navegación lateral.-->
+        <img id="header_img" src="Imagenes/Logo_bio.png" alt="Logo Bio">
+        <h1 class="mainTitle">Visor 3D</h1>
+        <ul class="nav">
+            <li><a href="#transformacion">Transformación</a></li>
+            <li><a href="">Lineas de producción</a>
+                <ul>
+                    <li><a href="#linea1">Linea 1</a></li>
+                    <li><a href="#linea2">Linea 2</a></li>
+                    <li><a href="#linea3">Linea 3</a></li>
+                    <li><a href="#linea4">Linea 4</a></li>
+                    <li><a href="#linea5">Linea 5</a></li>
+                    <li><a href="#linea6">Linea 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#pl2">Planta 2</a></li>
+            <!-- <li><a href="#">XXXXX</a></li> -->
+            <!--This is a trail for commits on GitHub-->
+        </ul>
+    </header>
 
-    <body>
-        <header>
-            <!--Sugerencia de inserción de un menú de navegación lateral.-->
-            <img id="header_img" src="Imagenes/Logo_bio.png" alt="Logo Bio">
-            <h1 class="mainTitle">Visor 3D</h1>
-            <ul class="nav">
-                <li><a href="#transformacion">Transformación</a></li>
-                <li><a href="">Lineas de producción</a>
-                    <ul>
-                        <li><a href="#linea1">Linea 1</a></li>
-                        <li><a href="#linea2">Linea 2</a></li>
-                        <li><a href="#linea3">Linea 3</a></li>
-                        <li><a href="#linea4">Linea 4</a></li>
-                        <li><a href="#linea5">Linea 5</a></li>
-                        <li><a href="#linea6">Linea 6</a></li>
-                    </ul>
-                </li>
-                <li><a href="#pl2">Planta 2</a></li>
-                <!-- <li><a href="#">XXXXX</a></li> -->
-                <!--This is a trail for commits on GitHub-->
-            </ul>
-        </header>
-
-        <div class="areaContainer">
-            <p id="transformacion" class="area_titulo">Transformación</p>
-            <div class="BoxBoxes">
-                <!-- <div class="linkBox">
+    <div class="areaContainer">
+        <p id="transformacion" class="area_titulo">Transformación</p>
+        <div class="BoxBoxes">
+            <!-- <div class="linkBox">
                     <a href="#" target="_blank"> <img src="Imagenes/###" alt="####"><br>####</a>
                 </div> -->
 
-                <!-- <div class="linkBox">
+            <!-- <div class="linkBox">
                     <a href="https://autode.sk/3tInOLb" target="_blank"> <img src="Imagenes/FCA20219R HEMI UNIVERSAL ENGINE.png" alt="FCA20219R HEMI UNIVERSAL ENGINE">FCA20219R HEMI UNIVERSAL ENGINE</a>
                 </div> -->
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3DaM0LF"> <img src="Imagenes/THK20263R THK LINK COMPLETE RH.png" alt="THK20263R THK LINK COMPLETE RH"><br>THK20263R THK LINK COMPLETE RH</a>
+            <!-- <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>#####</p>
+                        <img src="Imagenes/#####.png" alt="#####" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="!!!!!" target="_blank">
+                                <img src="Imagenes/#####.png" alt="#####">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="!!!!!" target="_blank">
+                                <img src="Imagenes/Planos/#####.png" alt="#####">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div> -->
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3BtOrrO" target="_blank"> <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png" alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH"><br>STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH</a>
+            <!--STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH-->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH</p>
+                        <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png" alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3BtOrrO" target="_blank">
+                                <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png" alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/Eaxm-wzsNTVPn_kLx_xnBH8BHodUhDniWXlpvWlNsRKiFw" target="_blank">
+                                <img src="Imagenes/Planos/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png" alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/38NcFQF" target="_blank"> <img src="Imagenes/FCA20289R ENGINE ASSY GMET6.png" alt="FCA20289R ENGINE ASSY GMET6"><br>FCA20289R ENGINE ASSY GMET6</a>
+            <!-- FCA20289R ENGINE ASSY GMET6 -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>FCA20289R ENGINE ASSY GMET6</p>
+                        <img src="Imagenes/FCA20289R ENGINE ASSY GMET6.png" alt="FCA20289R ENGINE ASSY GMET6" style="width:200px;height:200px;">
+                    </div>
+                    <div class=" flip-card-back d-flex justify-content-center align-items-center ">
+                        <div class="m-3 ">
+                            <a href="https://autode.sk/38NcFQF " target="_blank "> <img src="Imagenes/FCA20289R ENGINE ASSY GMET6.png " alt="FCA20289R ENGINE ASSY GMET6 "><br>Visor 3D</a>
+                        </div>
+                        <div class="m-3 ">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/EQc2eIRmURRDhm2o6l50mTQBmXC8lCSGOO2x7z7mj5AtHg" target="_blank ">
+                                <img src="Imagenes/Planos/FCA20289R ENGINE ASSY GMET6.png " alt="FCA20289R ENGINE ASSY GMET6">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3E56l5J" target="_blank"> <img src="Imagenes/FCA21099R SNEP ENGINE BANKING.png" alt="FCA21099R SNEP ENGINE BANKING"><br>FCA21099R SNEP ENGINE BANKING</a>
+            <!-- DAN21208R CANASTILLA DE PARED DE MALLA -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>DAN21208R CANASTILLA DE PARED DE MALLA</p>
+                        <img src="Imagenes/DAN21208R CANASTILLA DE PARED DE MALLA.png" alt="DAN21208R CANASTILLA DE PARED DE MALLA" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3hcZzAZ" target="_blank">
+                                <img src="Imagenes/DAN21208R CANASTILLA DE PARED DE MALLA.png" alt="DAN21208R CANASTILLA DE PARED DE MALLA">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/ERAGELfSwxdGk1e7wgyqv4MBblnkNyKtVgkSoU07fxhBWQ" target="_blank">
+                                <img src="Imagenes/Planos/DAN21208R CANASTILLA DE PARED DE MALLA.png" alt="DAN21208R CANASTILLA DE PARED DE MALLA">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="linkBox">
-                    <a href="#" target="_blank"> <img src="Imagenes/DAN21208R CANASTILLA DE PARED DE MALLA.png" alt="DAN21208R CANASTILLA DE PARED DE MALLA"><br>DAN21208R CANASTILLA DE PARED DE MALLA</a>
-                </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3haMCYo" target="_blank"> <img src="Imagenes/GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF.png" alt=" GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF"><br>GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF</a>
+            <!-- THK20263R THK LINK COMPLETE RH -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>THK20263R THK LINK COMPLETE RH</p>
+                        <img src="Imagenes/THK20263R THK LINK COMPLETE RH.png" alt="THK20263R THK LINK COMPLETE RH" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3DaM0LF" target="_blank">
+                                <img src="Imagenes/THK20263R THK LINK COMPLETE RH.png" alt="THK20263R THK LINK COMPLETE RH">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/ERAGELfSwxdGk1e7wgyqv4MBblnkNyKtVgkSoU07fxhBWQ" target="_blank">
+                                <img src="Imagenes/Planos/THK20263R THK LINK COMPLETE RH.png" alt="THK20263R THK LINK COMPLETE RH">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="#" target="_blank"> <img src="Imagenes/GMM19530R STEEL BASKET 28848.png" alt="GMM19530R STEEL BASKET 28848"><br>GMM19530R STEEL BASKET 28848</a>
+            <!-- ZFT21193R CALIPER J34 -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>ZFT21193R CALIPER J34</p>
+                        <img src="Imagenes/ZFT21193R CALIPER J34.png" alt="ZFT21193R CALIPER J34" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3EhbJCQ" target="_blank">
+                                <img src="Imagenes/ZFT21193R CALIPER J34.png" alt="ZFT21193R CALIPER J34">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/EblDZcyJl95Jm9tueIZoCiMBiN1_Mj9yAQ7nfNyfkigRZQ" target="_blank">
+                                <img src="Imagenes/Planos/ZFT21193R CALIPER J34.png" alt="ZFT21193R CALIPER J34">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3EhbJCQ" target="_blank"> <img src="Imagenes/ZFT21193R CALIPER J34.png" alt="ZFT21193R CALIPER J34"><br>ZFT21193R CALIPER J34</a>
+            <!-- HIT21051R CALIPER J34 -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>HIT21051R CALIPER J34</p>
+                        <img src="Imagenes/HIT21051R CALIPER J34.png" alt="HIT21051R CALIPER J34" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3lv2QwK" target="_blank">
+                                <img src="Imagenes/HIT21051R CALIPER J34.png" alt="HIT21051R CALIPER J34">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/EcXYlA4jaoFFqWaHzV1nZvkBit4ZSb5kBxR7vTzq2EEr_g" target="_blank">
+                                <img src="Imagenes/Planos/HIT21051R CALIPER J34.png" alt="HIT21051R CALIPER J34">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3EHxegm" target="_blank"> <img src="Imagenes/AUM20202R CYCLON.png" alt="AUM20202R CYCLON"><br>AUM20202R CYCLON</a>
+            <!-- AUM20202R CYCLON -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>AUM20202R CYCLON</p>
+                        <img src="Imagenes/AUM20202R CYCLON.png" alt="AUM20202R CYCLON" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3EHxegm" target="_blank">
+                                <img src="Imagenes/AUM20202R CYCLON.png" alt="AUM20202R CYCLON">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/Ea4JDtxILnRJojlEeWAPl6gBGOUEDYt8xDY1ufRFdz0C3g" target="_blank">
+                                <img src="Imagenes/Planos/AUM20202R CYCLON.png" alt="AUM20202R CYCLON">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3hTswSM" target="_blank"> <img src="Imagenes/STE21218R FRONT FASCIA.png" alt="STE21218R FRONT FASCIA"><br>STE21218R FRONT FASCIA</a>
+            <!-- STE21218R FRONT FASCIA -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>STE21218R FRONT FASCIA</p>
+                        <img src="Imagenes/STE21218R FRONT FASCIA.png" alt="STE21218R FRONT FASCIA" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3hTswSM" target="_blank">
+                                <img src="Imagenes/STE21218R FRONT FASCIA.png" alt="STE21218R FRONT FASCIA">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/EVGeKMbUhKRFiVXNqhLaInUBGg3A46vtY7Ht-11f7JtTMA" target="_blank">
+                                <img src="Imagenes/Planos/STE21218R FRONT FASCIA.png" alt="STE21218R FRONT FASCIA">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
+            </div>
 
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
-                <p>This is a message only in the branch 3D</p>
+            <!-- FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015 -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015</p>
+                        <img src="Imagenes/FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015.png" alt="FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/2ZnCsxv" target="_blank">
+                                <img src="Imagenes/FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015.png" alt="FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/EVP2nyKXo7NBiHagwzjUVWEBHz-g00pgRvOXtT5U_PLP6A" target="_blank">
+                                <img src="Imagenes/Planos/FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015.png" alt="FCA20209R 14VF GLASS ASSY - QTR LH 0CS94015">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAZ20335R RACK PYUD ENGINE -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>MAZ20335R RACK PYUD ENGINE</p>
+                        <img src="Imagenes/MAZ20335R RACK PYUD ENGINE.png" alt="MAZ20335R RACK PYUD ENGINE" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3u2nGHH" target="_blank">
+                                <img src="Imagenes/MAZ20335R RACK PYUD ENGINE.png" alt="MAZ20335R RACK PYUD ENGINE">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/Ea_HOQxGQ-BAgVaUG9RfEjUBFZLHt0KCIo7hy-xlXgOYAg" target="_blank">
+                                <img src="Imagenes/Planos/MAZ20335R RACK PYUD ENGINE.png" alt="MAZ20335R RACK PYUD ENGINE">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RADIADOR HANON J59W RETRABAJO -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>RADIADOR HANON J59W RETRABAJO</p>
+                        <img src="Imagenes/RADIADOR HANON J59W RETRABAJO.png" alt="RADIADOR HANON J59W RETRABAJO" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/2W6In8U" target="_blank">
+                                <img src="Imagenes/RADIADOR HANON J59W RETRABAJO.png" alt="RADIADOR HANON J59W RETRABAJO">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/EccRJ74BXwFBrs2RNAKDufIBA3RWuFYtJ1-vh1QcwNp-YA" target="_blank">
+                                <img src="Imagenes/Planos/RADIADOR HANON J59W RETRABAJO.png" alt="RADIADOR HANON J59W RETRABAJO">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RADIADOR HANON J59W -->
+            <div class="linkBox flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front mx-auto d-block">
+                        <p>RADIADOR HANON J59W</p>
+                        <img src="Imagenes/RADIADOR HANON J59W.png" alt="RADIADOR HANON J59W" style="width:200px;height:200px;">
+                    </div>
+                    <div class="flip-card-back d-flex justify-content-center align-items-center">
+                        <div class="m-3">
+                            <a href="https://autode.sk/3CDLfK8" target="_blank">
+                                <img src="Imagenes/RADIADOR HANON J59W.png" alt="RADIADOR HANON J59W">
+                                <br> Visor 3D
+                            </a>
+                        </div>
+                        <div class="m-3">
+                            <a href="https://bioin-my.sharepoint.com/:b:/g/personal/julio_bioin_onmicrosoft_com/ETDJhQAVN9tNqDpMInu2n1cBzizxTDPJXgXAUdio099L6Q" target="_blank">
+                                <img src="Imagenes/Planos/RADIADOR HANON J59W.png" alt="RADIADOR HANON J59W">
+                                <br>Plano
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <hr>
+
+    <div class="areaContainer ">
+        <p id="transformacion " class="area_titulo ">Prototipos</p>
+        <div class="BoxBoxes ">
+            <div class="linkBox ">
+                <a href="https://autode.sk/3EhbJCQ " target="_blank "> <img src="Imagenes/ZFT21193R CALIPER J34.png " alt="ZFT21193R CALIPER J34 "><br>ZFT21193R CALIPER J34</a>
             </div>
         </div>
+    </div> -->
 
-    
-        <hr>
 
-        <div class="areaContainer">
-            <p id="transformacion" class="area_titulo">Prototipos</p>
-            <div class="BoxBoxes">
-                <div class="linkBox">
-                    <a href="https://autode.sk/3EhbJCQ" target="_blank"> <img src="Imagenes/ZFT21193R CALIPER J34.png" alt="ZFT21193R CALIPER J34"><br>ZFT21193R CALIPER J34</a>
-                </div>
+    <hr>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3lv2QwK" target="_blank"> <img src="Imagenes/HIT21051R CALIPER J34.png" alt="HIT21051R CALIPER J34"><br>HIT21051R CALIPER J34</a>
-
+    <div class="areaContainer ">
+        <p id="linea1 " class="area_titulo ">Linea 1</p>
+        <div class="BoxBoxes ">
+            <div class="linkBox ">
+                <a href="https://autode.sk/3BtOrrO " target="_blank "> <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png " alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH "><br>STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH</a>
             </div>
         </div>
+    </div>
 
+    <hr>
 
-        <hr>
-
-        <div class="areaContainer">
-            <p id="linea1" class="area_titulo">Linea 1</p>
-            <div class="BoxBoxes">
-                <div class="linkBox">
-                    <a href="https://autode.sk/3BtOrrO" target="_blank"> <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png" alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH"><br>STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH</a>
-                </div>
+    <div class="areaContainer ">
+        <p id="linea2 " class="area_titulo ">Linea 2</p>
+        <div class="BoxBoxes ">
+            <div class="linkBox ">
+                <a href="https://autode.sk/3DaM0LF "> <img src="Imagenes/THK20263R THK LINK COMPLETE RH.png " alt="THK20263R THK LINK COMPLETE RH "><br>THK20263R THK LINK COMPLETE RH</a>
             </div>
         </div>
+    </div>
 
-        <hr>
+    <hr>
 
-        <div class="areaContainer">
-            <p id="linea2" class="area_titulo">Linea 2</p>
-            <div class="BoxBoxes">
-                <div class="linkBox">
-                    <a href="https://autode.sk/3DaM0LF"> <img src="Imagenes/THK20263R THK LINK COMPLETE RH.png" alt="THK20263R THK LINK COMPLETE RH"><br>THK20263R THK LINK COMPLETE RH</a>
-                </div>
+    <div class="areaContainer ">
+        <p id="linea3 " class="area_titulo ">Linea 3</p>
+        <div class="BoxBoxes ">
+            <div class="linkBox ">
+                <a href="https://autode.sk/3BtOrrO " target="_blank "> <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png " alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH "><br>STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH</a>
+            </div>
+
+            <div class="linkBox ">
+                <a href="https://autode.sk/3niWIdk " target="_blank "> <img src="Imagenes/GMM19530R STEEL BASKET 28848.png " alt="GMM19530R STEEL BASKET 28848 "><br>GMM19530R STEEL BASKET 28848</a>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="areaContainer ">
+        <p id="linea4 " class="area_titulo ">Linea 4</p>
+        <div class="BoxBoxes ">
+
+            <div class="linkBox ">
+                <a href="https://autode.sk/3haMCYo " target="_blank "> <img src="Imagenes/GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF.png " alt=" GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF "><br>GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="areaContainer ">
+        <p id="linea5 " class="area_titulo ">Linea 5</p>
+        <div class="BoxBoxes ">
+
+            <div class="linkBox ">
+                <a href="https://autode.sk/3haMCYo " target="_blank "> <img src="Imagenes/GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF.png " alt=" GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF "><br>GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF
+                </a>
+            </div>
+
+            <div class="linkBox ">
+                <a href="https://autode.sk/3hTswSM " target="_blank "> <img src="Imagenes/STE21218R FRONT FASCIA.png " alt="STE21218R FRONT FASCIA "><br>STE21218R FRONT FASCIA</a>
             </div>
         </div>
+    </div>
 
-        <hr>
+    <hr>
 
-        <div class="areaContainer">
-            <p id="linea3" class="area_titulo">Linea 3</p>
-            <div class="BoxBoxes">
-                <div class="linkBox">
-                    <a href="https://autode.sk/3BtOrrO" target="_blank"> <img src="Imagenes/STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH.png" alt="STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH"><br>STE21127R y STE21128R BODY SIDE APERTURA FRT DOOR RH-LH</a>
-                </div>
+    <div class="areaContainer ">
+        <p id="pl2 " class="area_titulo ">Planta 2</p>
+        <div class="BoxBoxes ">
+            <div class="linkBox ">
+                <a href="https://autode.sk/2Wevs4Y " target="_blank "> <img src="Imagenes/ESCANTILLON SOPORTES FRONTALES ROBOT PL2.png " alt="ESCANTILLON SOPORTES FRONTALES ROBOT PL2 "><br>ESCANTILLON SOPORTES FRONTALES ROBOT PL2</a>
+            </div>
 
-                <div class="linkBox">
-                    <a href="https://autode.sk/3niWIdk" target="_blank"> <img src="Imagenes/GMM19530R STEEL BASKET 28848.png" alt="GMM19530R STEEL BASKET 28848"><br>GMM19530R STEEL BASKET 28848</a>
-                </div>
+            <div class="linkBox ">
+                <a href="https://autode.sk/38NcFQF " target="_blank "> <img src="Imagenes/FCA20289R ENGINE ASSY GMET6.png " alt="FCA20289R ENGINE ASSY GMET6 "><br>FCA20289R ENGINE ASSY GMET6</a>
+            </div>
 
+            <div class="linkBox ">
+                <a href="https://autode.sk/3EHxegm " target="_blank "> <img src="Imagenes/AUM20202R CYCLON.png " alt="AUM20202R CYCLON "><br>AUM20202R CYCLON</a>
+            </div>
+
+            <div class="linkBox ">
+                <a href="# " target="_blank "> <img src="Imagenes/DAN21208R CANASTILLA DE PARED DE MALLA.png " alt="DAN21208R CANASTILLA DE PARED DE MALLA "><br>DAN21208R CANASTILLA DE PARED DE MALLA</a>
             </div>
         </div>
+    </div>
+</body>
 
-        <hr>
-
-        <div class="areaContainer">
-            <p id="linea4" class="area_titulo">Linea 4</p>
-            <div class="BoxBoxes">
-
-                <div class="linkBox">
-                    <a href="https://autode.sk/3haMCYo" target="_blank"> <img src="Imagenes/GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF.png" alt=" GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF"><br>GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF</a>
-                </div>
-
-            </div>
-        </div> 
-
-        <hr>
-
-        <div class="areaContainer">
-            <p id="linea5" class="area_titulo">Linea 5</p>
-            <div class="BoxBoxes">
-                
-                <div class="linkBox">
-                    <a href="https://autode.sk/3haMCYo" target="_blank"> <img src="Imagenes/GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF.png" alt=" GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF"><br>GMM17169R RACK-REINF RF PNL SUPT LONG SUNROOF</a>
-                </div>
-                
-                <div class="linkBox">
-                    <a href="https://autode.sk/3hTswSM" target="_blank"> <img src="Imagenes/STE21218R FRONT FASCIA.png" alt="STE21218R FRONT FASCIA"><br>STE21218R FRONT FASCIA</a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="areaContainer">
-            <p id="pl2" class="area_titulo">Planta 2</p>
-            <div class="BoxBoxes">
-                <div class="linkBox">
-                    <a href="https://autode.sk/2Wevs4Y" target="_blank"> <img src="Imagenes/ESCANTILLON SOPORTES FRONTALES ROBOT PL2.png" alt="ESCANTILLON SOPORTES FRONTALES ROBOT PL2"><br>ESCANTILLON SOPORTES FRONTALES ROBOT PL2</a>
-                </div>
-
-                <div class="linkBox">
-                    <a href="https://autode.sk/38NcFQF" target="_blank"> <img src="Imagenes/FCA20289R ENGINE ASSY GMET6.png" alt="FCA20289R ENGINE ASSY GMET6"><br>FCA20289R ENGINE ASSY GMET6</a>
-                </div>
-                
-                <div class="linkBox">
-                    <a href="https://autode.sk/3EHxegm" target="_blank"> <img src="Imagenes/AUM20202R CYCLON.png" alt="AUM20202R CYCLON"><br>AUM20202R CYCLON</a>
-                </div>
-
-                <div class="linkBox">
-                    <a href="#" target="_blank"> <img src="Imagenes/DAN21208R CANASTILLA DE PARED DE MALLA.png" alt="DAN21208R CANASTILLA DE PARED DE MALLA"><br>DAN21208R CANASTILLA DE PARED DE MALLA</a>
-                </div>
-            </div>
-        </div>
-    </body>
 </html>
