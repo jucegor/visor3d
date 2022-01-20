@@ -12,7 +12,7 @@ export function parsing(){
   .then(response => response.json())
   .then(data => {
       data.forEach(element => {
-        if (element.autodesk_link != "") {
+        if (element.autodesk_link != "" && element.estatus == 'activo') {
           var div_element = document.createElement('div');
           div_element.innerHTML = `
 
