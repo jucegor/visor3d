@@ -1,13 +1,13 @@
 export function updater() {
 
-  const proyectos = document.querySelector('.tabla-proyectos tbody')
+    const proyectos = document.querySelector('.tabla-proyectos tbody')
 
-  fetch("./proyectos.json", {})
-    .then(response => response.json())
-    .then(data => {
-      data.forEach(element => {
-          var tr_element = document.createElement('tr');
-          tr_element.innerHTML = `
+    fetch("./proyectos.json", {})
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(element => {
+                var tr_element = document.createElement('tr');
+                tr_element.innerHTML = `
 
             <td><img src="./assets/images/proyectos/${element.nombre_proyecto}.png" alt="" style="width: auto; height: 100px; text-align: center;"></td>
             <td>${element.numero_proyecto}</td>
@@ -24,9 +24,9 @@ export function updater() {
             <td>${element.semana_final}</td>
             `;
 
-          proyectos.appendChild(tr_element);
-      });
-    });
+                proyectos.appendChild(tr_element);
+            });
+        });
 
-  console.log('Updater feature loaded...');
+    console.log('Updater feature loaded...');
 };
