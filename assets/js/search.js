@@ -7,9 +7,9 @@ $(document).ready(function() {
                     $(this).show();
             });
         } else {
-
-            $(this).show();
-
+            $('.proyectos .card').show().each(function() {
+                $(this).show();
+            });
         }
     });
 
