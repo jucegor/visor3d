@@ -684,5 +684,19 @@
     "autodesk_link": "",
     "ruta_carpeta": "",
     "confirmacion_dynamics": "No"
+  },
+  {
+    "numero_proyecto": "21-051-R",
+    "cliente": "HITACHI",
+    "nombre_proyecto": "CALIPER J34",
+    "responsable": "RIVAS ALAMILLO MIGUEL",
+    "revision": "3",
+    "semana_inicio": 2,
+    "semana_final": 5,
+    "estatus": "activo",
+    "linea": 5,
+    "autodesk_link": "https://autode.sk/3uDd8B3",
+    "ruta_carpeta": "",
+    "confirmacion_dynamics": "No"
   }
 ]
